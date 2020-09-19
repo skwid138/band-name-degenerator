@@ -27,11 +27,10 @@ ___
 
 ### Scheme
 
-The document fields folled by an * are stretch goals
+The document fields followed by an * are stretch goals
 
 - bands (Collection)
-  - Auto-ID (Document)
-    - name (required string: the band name)
+  - name (required string: the band name) (Document)
     - user (required string: document ID for the user who created the record)
     - date_added (required timestamp: when the record was created)
     - related_band (optional string: document ID for the band that inspired this record)
@@ -43,6 +42,5 @@ The document fields folled by an * are stretch goals
     - votes_up* (optional number: incrimented when clicked) _note: without tracking the user voting multiple votes could be cast by the same user_ 
     - votes_down* (optional number: incrimented when clicked) _note: without tracking the user voting multiple votes could be cast by the same user_ 
 - users (Collection)
-  - Auto-ID (Document)
-    - name (required string: the user's name)
+  - name (required string: the user's name) (Document)
     - bands_created (required number: the total amount of band records the user has created)
